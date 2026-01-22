@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+        <h1>Diego Andrés Fajado Romero</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section id="hero">
+            <div class="hero_izquierda">
+                <h2>Soy Diego Fajardo</h2>
+                <h3>Ingeniero en Ciencias de la Computacion</h3>
+                <p>Me gradué en la Universidad Católica de Honduras</p>
+                <p>Me desempeño como Desarrollador Web</p>
+                <button type="button"> <a href="#contacto">Contáctame</a></button>
+            </div>
+            <div class="hero_derecha">
+                <picture>
+                    <source srcset="https://picsum.photos/id/110/1200/720" media="(min-width: 1024px)">
+                    <source srcset="https://picsum.photos/id/110/1024/640" media="(min-width: 720px)">
+                    <img src="https://picsum.photos/id/110/480/480" alt="Foto de Perfil">
+                </picture>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <div class="tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="https://picsum.photos/id/300/100/100" alt="Sistema para Hospital">
+                    <h2>Sistema para Hospital</h2>
+                    <p>El funcionamiento principal de este sistema era crear citas para los pacientes</p>
+                    <div class="tarjeta-footer">
+                        <button type="button">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="https://picsum.photos/id/300/100/100" alt="Sistema para Floristería">
+                    <h2>Sistema para Hospital</h2>
+                    <p>Este sistema consistía en la administración de inventario de la empresa</p>
+                    <div class="tarjeta-footer">
+                        <button type="button">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="https://picsum.photos/id/300/100/100" alt="Página Web para Interact Tegucigalpa Sur">
+                    <h2>Sistema para Hospital</h2>
+                    <p>Esta página web tenia el objetivo de brindar información de la empresa</p>
+                    <div class="tarjeta-footer">
+                        <button type="button">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <form action="" method="get">
+                <div class="field">
+                    <label for="txtNombre">Nombre Completo</label>
+                    <input type="text" placeholder="Nombre Completo" name="txtNombre" id="txtNombre">
+                </div>
+
+                <div class="field">
+                    <label for="txtEmail">Correo Electrónico</label>
+                    <input type="email" placeholder="ejemplo@hola.com" name="txtEmail" id="txtEmail">
+                </div>
+
+                <div class="field">
+                    <label for="txtMensaje">Mensaje</label>
+                    <textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <div class="field-action">
+                    <button type="submit" name="btnEnviar">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
