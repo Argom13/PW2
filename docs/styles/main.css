@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 body{
@@ -17,12 +18,12 @@ body{
 header{
     display: flex;
     padding: 0rem 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 header h1{
-    font-size: 1.2rem;
+    font-size: 40px;
     font-weight: bold;
     margin: 0px;
     padding: 0px;
@@ -40,6 +41,7 @@ header nav ul a{
     display: inline-block;
     text-decoration: none;
     color: #E0E0E0;
+    font-size: 20px;
     padding: 1.5rem 2rem;
     margin: 0px;
     transition: background-color ease-in-out 0.5s;
@@ -49,53 +51,137 @@ header nav ul a:hover{
     background-color: #88888873;
 }
 
-#hero{
+
+
+#hero { 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-}
+    padding: 60px 10%;
+} 
 
-#hero div.hero_izquierda{
+.hero-left {
     flex: 1 1 45%;
-    text-align: center;
+    max-width: 500px;
 }
 
-#hero div.hero_izquierda h2{
-    font-size: 2rem;
+.hero-left h2 {
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
-#hero div.hero_izquierda h3{
-    font-size: 1.5rem;
+.hero-left h3 {
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-#hero div.hero_izquierda p{
-    font-size: 1rem;
+.hero-left p {
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
-#hero div.hero_derecha{
+.hero-right {
     flex: 1 1 45%;
+    text-align: center;
+} 
+
+.hero-left button a{
+    text-decoration: none;
+    color: #E0E0E0;
 }
 
-#hero .hero_derecha img{
+.hero-right img {
     width: 220px;
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 0 10px #FF4500;
+    margin-bottom: 20px;
+}
+
+#proyectos{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.tarjeta{
+    background-color: #004D61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+   
+    padding: 20px;
+    margin: 10px auto;
+    gap: 1rem;
+}
+
+.tarjeta p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.tarjeta-imagen{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    
 }
 
 
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.field input{
+    padding: 0rem 2rem;
+    text-align: center;
+}
+
+.field textarea{
+    padding: 0rem 2rem;
+    text-align: center;
+}
+
+.field-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 button{
-    background-color: #673AB7;
+    background-color: #3E5641;
     color: #E0E0E0;
+    padding: 0.5rem 6rem;
+    border-radius: 20px;
+    transition: background-color, ease-in-out 0.5s;
+    border: 0px;
+    
 }
 
-button a{
-    text-decoration: none;
-    color: #E0E0E0;
+button:hover{
+    background-color: #2a3a2c;
+    
 }
