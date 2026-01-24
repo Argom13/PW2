@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/script.js"></script>
+    <script src="scripts/slideshow.js"></script>
     <title>Portafolio</title>
 </head>
 
@@ -28,45 +29,49 @@
         <section id="hero">
             <div class="hero-left">
                 <h2>Soy Diego Fajardo</h2>
-                <h3>Ingeniero en Ciencias de la Computacion</h3>
-                <p>Graduado de la Universidad Católica de Honduras. Me desempeño como Desarrollador Web</p>
+                <h3>Estudiante de Ingeniería en Ciencias de la Computacion</h3>
+                <p>Soy Técnico Profesional en Informática, graduado del Instituto
+                    No Gubernamental Nuevo Milenio, en donde descubrí en qué área
+                    quería profesionalizarme. </p>
                 <a href="#contacto"><button type="button">Contáctame</button></a>
             </div>
             <div class="hero-right">
                 <picture>
-                    <source srcset="https://picsum.photos/id/110/1200/720" media="(min-width: 1024px)">
-                    <source srcset="https://picsum.photos/id/110/1024/640" media="(min-width: 720px)">
-                    <img src="https://picsum.photos/id/110/480/480" alt="Foto de Perfil">
+                    <source srcset="imagenes/foto_perfil.jpg" media="(min-width: 1024px)">
+                    <source srcset="imagenes/foto_perfil.jpg" media="(min-width: 720px)">
+                    <img src="imagenes/foto_perfil.jpg" alt="Foto de Perfil">
                 </picture>
             </div>
         </section>
 
         <section id="proyectos">
             <h2>Proyectos</h2>
-            <div class="tarjeta">
-                <div class="tarjeta-imagen">
-                    <img src="https://picsum.photos/id/300/100/100" alt="Sistema para Hospital">
-                    <h2>Sistema para Hospital</h2>
-                    <p>El funcionamiento principal de este sistema era crear citas para los pacientes</p>
-                </div>
-            </div>
+            <div class="slideshow">
+                <div class="slideshow-track">
+                    <div class="slideshow-item">
+                        <div class="tarjeta-imagen">
+                            <img src="imagenes/sistema_hospital.jpg" alt="Sistema para Hospital">
+                            <h2>Sistema para Hospital</h2>
+                            <p>El funcionamiento principal de este sistema era crear citas para los pacientes</p>
+                        </div>
+                    </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-imagen">
-                    <img src="https://picsum.photos/id/300/100/100" alt="Sistema para Floristería">
-                    <h2>Sistema para Hospital</h2>
-                    <p>Este sistema consistía en la administración de inventario de la empresa</p>
-                    
-                </div>
-            </div>
+                    <div class="slideshow-item">
+                        <div class="tarjeta-imagen">
+                            <img src="imagenes/sistema-floristeria.jpg" alt="Sistema para Floristería">
+                            <h2>Sistema para Floristería</h2>
+                            <p>Este sistema consistía en la administración de inventario de la empresa</p>
+                        </div>
+                    </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-imagen">
-                    <img src="https://picsum.photos/id/300/100/100" alt="Página Web para Interact Tegucigalpa Sur">
-                    <h2>Sistema para Hospital</h2>
-                    <p>Esta página web tenia el objetivo de brindar información de la empresa</p>
+                    <div class="slideshow-item">
+                        <div class="tarjeta-imagen">
+                            <img src="imagenes/interact-webpagejpg.jpg" alt="Página Web para Interact Tegucigalpa Sur">
+                            <h2>Página Web para Interact Tegucigalpa Sur</h2>
+                            <p>Esta página web tenia el objetivo de brindar información de la empresa</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section id="contacto">

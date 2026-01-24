@@ -1,4 +1,3 @@
-// Add Event Listener for DOMContentLoaded
 let formData = {};
 document.addEventListener("DOMContentLoaded", ()=>{
     initFormValidation();
