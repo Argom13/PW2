@@ -63,7 +63,7 @@ class slideShow{
     moveToNext(){
         let nextIndex = this.currentItem + this.direction;
         if(nextIndex < 0){
-            nextIndex = 1;
+            nextIndex = 0;
             this.direction = 1;
         }
 
